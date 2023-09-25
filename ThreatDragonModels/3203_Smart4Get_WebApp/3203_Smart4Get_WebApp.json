@@ -19,14 +19,17 @@
         "cells": [
           {
             "position": {
-              "x": 580,
-              "y": 270
+              "x": 600,
+              "y": 270.0000000000002
             },
             "size": {
-              "width": 60,
-              "height": 60
+              "width": 220,
+              "height": 140
             },
             "attrs": {
+              "text": {
+                "text": "Smart4Get Web app"
+              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
@@ -39,8 +42,8 @@
             "zIndex": 1,
             "data": {
               "type": "tm.Process",
-              "name": "Process",
-              "description": "",
+              "name": "Smart4Get Web app",
+              "description": "Web application running in python flask",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
@@ -50,14 +53,17 @@
           },
           {
             "position": {
-              "x": 824,
-              "y": 270
+              "x": 860,
+              "y": 290
             },
             "size": {
-              "width": 60,
-              "height": 60
+              "width": 100,
+              "height": 90
             },
             "attrs": {
+              "text": {
+                "text": "Web server"
+              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
@@ -70,8 +76,8 @@
             "zIndex": 2,
             "data": {
               "type": "tm.Process",
-              "name": "Process",
-              "description": "",
+              "name": "Web server",
+              "description": "Http server",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
@@ -123,6 +129,9 @@
               "height": 60
             },
             "attrs": {
+              "text": {
+                "text": "Staff"
+              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
@@ -134,7 +143,7 @@
             "id": "d89637ce-0397-415d-9305-dda712dfaf76",
             "data": {
               "type": "tm.Actor",
-              "name": "Actor",
+              "name": "Staff",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -154,6 +163,9 @@
               "height": 60
             },
             "attrs": {
+              "text": {
+                "text": "Customer"
+              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
@@ -165,7 +177,7 @@
             "id": "200ae0d8-51d8-45f7-a223-fd6fb9e3c75b",
             "data": {
               "type": "tm.Actor",
-              "name": "Actor",
+              "name": "Customer",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -217,6 +229,202 @@
             "labels": [
               "Http request"
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "977b9f58-5088-45b7-927a-2280d0154caa",
+            "source": {
+              "cell": "d89637ce-0397-415d-9305-dda712dfaf76"
+            },
+            "target": {
+              "cell": "5c6519f0-05b9-4304-ae99-db858ccb7f02"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "7896f318-afb7-4a84-876f-7839e487ce77",
+            "source": {
+              "cell": "5c6519f0-05b9-4304-ae99-db858ccb7f02"
+            },
+            "target": {
+              "cell": "39fb7208-3556-423f-8068-ac04cf24f86d"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "141500db-d12c-474b-8399-ecece33ef164",
+            "source": {
+              "cell": "39fb7208-3556-423f-8068-ac04cf24f86d"
+            },
+            "target": {
+              "cell": "8b5f571c-b7d1-4986-b67c-087cf7add5c7"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "3016f397-bb3c-4cbe-b50c-e07c761d05d9",
+            "source": {
+              "cell": "200ae0d8-51d8-45f7-a223-fd6fb9e3c75b"
+            },
+            "target": {
+              "cell": "5c6519f0-05b9-4304-ae99-db858ccb7f02"
+            }
+          },
+          {
+            "position": {
+              "x": 1050,
+              "y": 305
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Database"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "8b5f571c-b7d1-4986-b67c-087cf7add5c7",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Store",
+              "name": "Database",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "isALog": false,
+              "storesCredentials": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
           }
         ],
         "description": "3203_Smart4Get_WebApp"
