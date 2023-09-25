@@ -371,7 +371,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Http Request",
               "description": "",
               "outOfScope": false,
               "isBidirectional": false,
@@ -394,7 +394,51 @@
                 "x": 540,
                 "y": 390
               }
+            ],
+            "labels": [
+              "Http Request"
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "65b3eaef-8169-479f-83d5-64d523c422a1",
+            "source": {
+              "x": 560,
+              "y": 454
+            },
+            "target": {
+              "x": 660,
+              "y": 554
+            }
           },
           {
             "position": {
