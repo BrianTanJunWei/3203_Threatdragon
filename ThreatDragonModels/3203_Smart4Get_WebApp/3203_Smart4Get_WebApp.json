@@ -415,12 +415,12 @@
             "data": {
               "type": "tm.Store",
               "name": "Database",
-              "description": "",
+              "description": "SQL database",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "isALog": false,
-              "storesCredentials": false,
-              "isEncrypted": false,
+              "storesCredentials": true,
+              "isEncrypted": true,
               "isSigned": false,
               "hasOpenThreats": false,
               "threats": []
