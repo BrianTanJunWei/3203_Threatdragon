@@ -415,7 +415,7 @@
             "data": {
               "type": "tm.Store",
               "name": "Database",
-              "description": "SQL database",
+              "description": "MySQL database",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "isALog": false,
