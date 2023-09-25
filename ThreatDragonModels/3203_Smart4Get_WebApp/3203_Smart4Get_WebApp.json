@@ -250,7 +250,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Http Request",
               "description": "",
               "outOfScope": false,
               "isBidirectional": false,
@@ -267,7 +267,11 @@
             },
             "target": {
               "cell": "5c6519f0-05b9-4304-ae99-db858ccb7f02"
-            }
+            },
+            "vertices": [],
+            "labels": [
+              "Http Request"
+            ]
           },
           {
             "shape": "flow",
@@ -384,7 +388,13 @@
             },
             "target": {
               "cell": "5c6519f0-05b9-4304-ae99-db858ccb7f02"
-            }
+            },
+            "vertices": [
+              {
+                "x": 540,
+                "y": 390
+              }
+            ]
           },
           {
             "position": {
