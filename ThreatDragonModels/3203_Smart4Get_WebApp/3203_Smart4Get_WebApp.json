@@ -392,7 +392,7 @@
             "vertices": [
               {
                 "x": 540,
-                "y": 390
+                "y": 380
               }
             ],
             "labels": [
@@ -419,7 +419,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Http Response",
               "description": "",
               "outOfScope": false,
               "isBidirectional": false,
@@ -432,13 +432,20 @@
             },
             "id": "65b3eaef-8169-479f-83d5-64d523c422a1",
             "source": {
-              "x": 560,
-              "y": 454
+              "cell": "5c6519f0-05b9-4304-ae99-db858ccb7f02"
             },
             "target": {
-              "x": 660,
-              "y": 554
-            }
+              "cell": "200ae0d8-51d8-45f7-a223-fd6fb9e3c75b"
+            },
+            "vertices": [
+              {
+                "x": 560,
+                "y": 424
+              }
+            ],
+            "labels": [
+              "Http Response"
+            ]
           },
           {
             "position": {
